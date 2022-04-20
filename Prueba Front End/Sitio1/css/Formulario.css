@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    ;
+}
+body {
+
+    background-color: lightgrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+.form{
+    width: 400px;
+    background: beige;
+    padding: 100px;
+    margin: auto;
+    padding-top: 140px;
+    box-shadow: 7px 13px 37px;
+    
+    
+}
+.form h4{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+.controls{
+    width: 100%;
+    background: beige;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    font-size: 18px;
+}
+.form .buttons{
+    width: 100%;
+    background: lightgrey;
+    border: none;
+    padding: 12px;
+    margin:16px 0px;
+    font-size: 16px;
+}
+p{
+    font-size: 1.25em;
+    
+}
+header{
+    
+    background-color: rgb(172, 170, 170);
+}
+header .logo{
+    text-align: left ;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: left ;
+    color: black;
+    font-size: 1.5em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header .nav{
+    position: top;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    background-color: lightgrey;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 1px black;
+    color: black;
+
+}
+
+header a:hover{
+    color: lightgrey;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+
+
+
+footer{
+
+    background-color: rgba(172, 170, 170);
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 13%;
+}
+
+@media (min-width:720px){
+    header{
+        position:fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+    
+ 
+}

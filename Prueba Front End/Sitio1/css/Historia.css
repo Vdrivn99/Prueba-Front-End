@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+  
+
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    float: right;
+    height: 1500px;
+}
+h2{
+    font-size: 2.0em;
+}
+p{
+    font-size: 1.25em;
+}
+header{
+    background-color: beige;
+}
+.img {
+    width: 60%;
+    padding-right: 20px;
+}
+header .logo{
+    text-align: left ;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: left ;
+    color: black;
+    font-size: 1.5em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    box-shadow: 2px 2px 1px black;
+    color: black;
+
+}
+
+header a:hover{
+    color: lightgrey;
+    background-color: black;
+
+}
+#informacion{
+    background-color: beige;
+    color:black;
+    text-align: center;
+    
+}
+
+#informacion .container{
+    
+    text-align: center;
+    padding:  200px 12px;
+}
+@media (min-width:720px){
+    header{
+        position:fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    
+    }
+    #tabla{
+        top: auto;
+        margin: auto;
+        text-align: center;
+        padding: 100px 12px;
+    }
+    #informacion .container{
+        margin: 0;
+        padding: 200px 12px;
+        width: auto;
+        float: right;
+        
+    }
+    #informacion .historia{
+    padding: 500px;
+    float:right;
+    display: block;
+    justify-content: center;
+    background-color: lightgrey;
+    }
+   
+
+    #informacion .carta{
+        padding: 500px;
+        margin-bottom: auto;
+        float: left;
+        text-align: center;
+        display: block;
+    }
+
+    #carta .imagen1{
+        text-align: right;
+        float: right;
+    }
+
+    
+}
